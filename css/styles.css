@@ -1,0 +1,177 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+	outline: 1px solid red;   
+  	outline-offset: -1px; 		  
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.6;
+	background-color: #F4F4F6;
+	color: #3a3a3a;
+}
+/*
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+*/
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+/* 
+h2,
+h3 {
+	margin-top: 0;
+}
+*/
+
+a {
+	text-decoration: none;
+} 
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+.name {
+	font-size: 1.25em;
+	margin-top: 10px;
+	margin-bottom: 6px; 
+}
+
+.main-nav li {
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	background: transparent;
+}
+
+.name a,
+.main-nav a {
+	padding: 10px 15px; 
+	text-align: center;
+	display: inline-block; 
+}
+
+.main-nav a {
+	font-size: .95em;
+}
+	
+.main-nav a:hover {
+	color: #093a58;
+} 
+
+/* ---- Layout Containers ---- */
+
+.container {
+	padding-left: 1em; 
+	padding-right: 1em;
+}
+
+ .main-header {
+	margin-bottom: 30px;
+} 
+
+/*
+.main-footer {
+	text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
+} */
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+	.name,	
+	.main-nav li {
+		display: inline;
+	}
+
+	.container {
+		text-align: center;
+		max-width: 900px;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+} 
+
+@media (min-width: 1024px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.container {
+		width: 90%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.name,
+	.main-nav li {
+		float: left;
+	}
+
+	.main-nav li {
+		margin-left: 12px;
+	}
+   
+	/* ---- Columns ---- */
+
+	/* .col {
+		float: right;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	.primary {
+		width: 60%;
+	}
+	
+	.secondary {
+		width: 40%;
+	}
+	 */
+	/* ------------- */
+
+	 /* .feat-img {
+		width: 300px;
+		float: left;
+		margin-top: 5px;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		padding: 10px;
+		border: solid 1px #d9e4ea;
+	} */
+
+	 .clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	} 
+
+} 
